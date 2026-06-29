@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>सूर्यपुरा ग्राम विकास पोर्टल</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins','Noto Sans Devanagari',sans-serif;
+}
+
+body{
+background:#f8f9fa;
+color:#233142;
+}
+
+header{
+background:#0B8F4D;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 8%;
+background:linear-gradient(135deg,#0B8F4D,#42b883);
+color:white;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#F4A300;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin-right:10px;
+font-weight:bold;
+}
+
+.hero-image{
+font-size:180px;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+margin:60px 0 35px;
+color:#0B8F4D;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:0 8%;
+}
+
+.stat{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat h2{
+font-size:38px;
+color:#0B8F4D;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:0 8% 60px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin:15px 0;
+color:#0B8F4D;
+}
+
+.vision{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:70px 8%;
+background:white;
+flex-wrap:wrap;
+}
+
+.vision-text{
+max-width:550px;
+}
+
+.vision-image{
+font-size:150px;
+}
+
+.timeline{
+padding:50px 8%;
+}
+
+.timeline-box{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.step{
+background:#0B8F4D;
+color:white;
+padding:25px;
+border-radius:12px;
+flex:1;
+text-align:center;
+min-width:150px;
+}
+
+.social{
+padding:60px 8%;
+background:#eef8f1;
+}
+
+.posts{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.post{
+background:white;
+border-radius:15px;
+padding:25px;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.post h3{
+color:#0B8F4D;
+margin-bottom:15px;
+}
+
+.post .image{
+font-size:90px;
+text-align:center;
+margin:20px 0;
+}
+
+.mobile-demo{
+padding:60px 8%;
+text-align:center;
+}
+
+.phone{
+width:280px;
+margin:auto;
+background:#222;
+padding:15px;
+border-radius:35px;
+}
+
+.screen{
+background:white;
+border-radius:25px;
+padding:20px;
+}
+
+.screen h3{
+color:#0B8F4D;
+margin-bottom:15px;
+}
+
+footer{
+background:#233142;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero-image{
+font-size:120px;
+margin-top:30px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🌾 सूर्यपुरा</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Education</a>
+
+<a href="#">Farmers</a>
+
+<a href="#">Road</a>
+
+<a href="#">Panchayat</a>
+
+<a href="#">Digital ID</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>एक आधुनिक, आत्मनिर्भर और डिजिटल गांव</h1>
+
+<p>
+
+शिक्षा, कृषि, सड़क, पंचायत और डिजिटल पहचान को
+एक ही प्लेटफ़ॉर्म पर लाने का प्रयास।
+
+</p>
+
+<a class="btn" href="#">विकास देखें</a>
+
+<a class="btn" href="#">सेवाएं</a>
+
+</div>
+
+<div class="hero-image">
+
+🌾🏡
+
+</div>
+
+</section>
+
+<h2 class="section-title">ग्राम विकास आँकड़े</h2>
+
+<section class="stats">
+
+<div class="stat">
+<h2>15+</h2>
+<p>Development Projects</p>
+</div>
+
+<div class="stat">
+<h2>4200+</h2>
+<p>Villagers Connected</p>
+</div>
+
+<div class="stat">
+<h2>98%</h2>
+<p>School Enrollment</p>
+</div>
+
+<div class="stat">
+<h2>1200+</h2>
+<p>Farmers Registered</p>
+</div>
+
+</section>
+
+<h2 class="section-title">हमारी सेवाएं</h2>
+
+<section class="services">
+
+<div class="card">
+<h3>🌾 किसान सहायता</h3>
+<p>फसल सलाह एवं सरकारी योजनाएं</p>
+</div>
+
+<div class="card">
+<h3>🎓 शिक्षा</h3>
+<p>डिजिटल शिक्षा और छात्रवृत्ति</p>
+</div>
+
+<div class="card">
+<h3>🛣 सड़क विकास</h3>
+<p>नई सड़क और मरम्मत जानकारी</p>
+</div>
+
+<div class="card">
+<h3>🏛 पंचायत</h3>
+<p>ऑनलाइन पंचायत सेवाएं</p>
+</div>
+
+<div class="card">
+<h3>💳 डिजिटल पहचान</h3>
+<p>सभी नागरिकों की डिजिटल प्रोफ़ाइल</p>
+</div>
+
+<div class="card">
+<h3>💧 जल एवं स्वच्छता</h3>
+<p>स्वच्छ गांव मिशन</p>
+</div>
+
+</section>
+
+<section class="vision">
+
+<div class="vision-text">
+
+<h2>हर परिवार तक विकास</h2>
+
+<br>
+
+<p>
+
+हमारा उद्देश्य प्रत्येक नागरिक तक सरकारी योजनाएं,
+शिक्षा, स्वास्थ्य और डिजिटल सेवाएं पहुंचाना है।
+
+</p>
+
+</div>
+
+<div class="vision-image">
+
+👨‍🌾🏫
+
+</div>
+
+</section>
+
+<h2 class="section-title">विकास यात्रा</h2>
+
+<section class="timeline">
+
+<div class="timeline-box">
+
+<div class="step">2023<br>Survey</div>
+
+<div class="step">2024<br>Digital Records</div>
+
+<div class="step">2025<br>Smart Farming</div>
+
+<div class="step">2026<br>Digital Panchayat</div>
+
+<div class="step">2027<br>Model Village</div>
+
+</div>
+
+</section>
+
+<section class="social">
+
+<h2 class="section-title">Social Media Posts</h2>
+
+<div class="posts">
+
+<div class="post">
+
+<h3>🌐 सूर्यपुरा डिजिटल बन रहा है</h3>
+
+<div class="image">
+
+🏡📶👨‍🎓
+
+</div>
+
+<p>
+
+#DigitalVillage
+
+</p>
+
+</div>
+
+<div class="post">
+
+<h3>🌾 किसान की तरक्की, गांव की समृद्धि</h3>
+
+<div class="image">
+
+👨‍🌾🚜🌱
+
+</div>
+
+<p>
+
+#SmartFarmer
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="mobile-demo">
+
+<h2 class="section-title">Mobile View</h2>
+
+<div class="phone">
+
+<div class="screen">
+
+<h3>🌾 सूर्यपुरा</h3>
+
+<p>आधुनिक डिजिटल गांव</p>
+
+<br>
+
+<button class="btn">Explore</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 सूर्यपुरा ग्राम विकास पोर्टल</h3>
+
+<p>
+
+सशक्त गांव • शिक्षित परिवार • समृद्ध किसान
+
+</p>
+
+</footer>
+
+</body>
+</html>
